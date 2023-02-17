@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="design/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,16 +18,41 @@
 <body>
   <!-- Start Header -->
   <header>
-    <img src="./assets/images/logo.svg" alt="logo">
-    <nav class="hidden">
-      <ul>
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
-      </ul>
+    <img src="./assets/images/logo.svg" alt="logo" class="logo">
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>New</li></a>
+          <a href="#"><li>Popular</li></a>
+          <a href="#"><li>Trending</li></a>
+          <a href="#"><li>Categories</li></a>
+          <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+        </ul>
+      </div>
     </nav>
+
   </header>
   <!--End Header -->
 
@@ -65,10 +91,10 @@
  
   <!-- Section 3 -->
   <section>
-    <div class="wrapper .section-3">
+    <div class="wrapper section-3">
       <article>
         <div class="left">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="logo" >
         </div>
         <div class="right">
           <h2>01</h2>
@@ -104,6 +130,6 @@
   </section>
  
   
-  
+  <script src="script.js"></script>
 </body>
 </html>
