@@ -6,13 +6,14 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="design/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   <title>Frontend Mentor | News homepage</title>
-
+  <script src="my-script.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
 </head>
 <body>
@@ -20,35 +21,20 @@
   <header>
     <img src="./assets/images/logo.svg" alt="logo" class="logo">
 
-    <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-        
-        <!--
-        Some spans to act as a hamburger.
-        
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
+    <nav>
+      <div class="hid">
+        <a class="toggle-2"><span class="material-symbols-outlined close siz">
+          close
+        </span></a>
+        <a class="toggle"><span class="material-symbols-outlined hamburger">
+          menu
+        </span></a>
+        <ul id="menu" class="menu">
           <a href="#"><li>Home</li></a>
           <a href="#"><li>New</li></a>
           <a href="#"><li>Popular</li></a>
           <a href="#"><li>Trending</li></a>
           <a href="#"><li>Categories</li></a>
-          <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
         </ul>
       </div>
     </nav>
@@ -129,7 +115,5 @@
     
   </section>
  
-  
-  <script src="script.js"></script>
 </body>
 </html>
